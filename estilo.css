@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    background-color: #F0F0F0; 
+    color: #1A1A1A;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+h1, h2, h3, .article-title {
+    font-family: 'Creepster', system-ui;
+    color: #6A0DAD; 
+    letter-spacing: 2px;
+}
+
+p, .text-lead {
+    color: #1A1A1A; 
+}
+
+.border.fixed.split-nav {
+    background-color: #F0F0F0;
+    border-bottom: 2px solid #B5FF1A; 
+}
+
+.nav-brand h3 a,
+.collapsible-body ul.inline li a {
+    color: #6A0DAD; 
+}
+
+.collapsible-body {
+    background-color: #F0F0F0;
+    border: 1px solid #9B9B9B;
+}
+
+.collapsible-body ul.inline li a:hover {
+    color: #B5FF1A;
+}
+
+.article, .card {
+    background-color: white; 
+    border: 1px solid #9B9B9B;
+}
+
+.paper-btn {
+    background-color: #B5FF1A; 
+    color: #1A1A1A;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.paper-btn:hover {
+    background-color: #9ecc1a; 
+}
+
+.modal-body {
+    background-color: #F0F0F0;
+    border: 2px solid #6A0DAD;
+    color: #1A1A1A;
+}
+
+.btn-close {
+    color: #B5FF1A;
+}
+
+#modal-2 .modal-body {
+    width: 90%;
+    max-width: 1200px;
+}
+#modal-2 .modal-body img {
+    width: 100%;
+    height: auto;
+}
+
+#modal-1 + .modal .modal-body {
+    width: 680px;  
+    height: 530px; 
+    max-width: 90vw; 
+    max-height: 90vh; 
+    overflow: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start;
+    padding: 15px;
+}
+
+
+footer {
+    background-color: #E0E0E0; 
+    padding: 20px 0;
+    margin-top: 30px;
+    border-top: 2px solid #9B9B9B;
+}
+
+
+/* A partir de aca es para que se adapte al celular ya que antes se veia todo cortado */
+
+img {
+    max-width: 100%; 
+    height: auto;    
+    display: block; 
+}
+
+footer img.float-left {
+    max-width: 80px; 
+    margin-right: 15px;
+    float: left;
+}
+
+@media (max-width: 768px) {
+    
+    .split-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    
+    .nav-brand h3 a {
+        font-size: 1.2em; 
+    }
+
+    .card .card-body {
+        text-align: center;
+    }
+
+    #modal-1 + .modal .modal-body {
+        width: 95vw !important; 
+        height: 95vh !important; 
+    }
+    
+    .modal-body iframe {
+        width: 100% !important; 
+        height: 350px; 
+    }
+
+    footer img.float-left {
+        float: none;
+        margin-bottom: 10px;
+        margin-left: auto; /* Centra la imagen */
+        margin-right: auto;
+    }
+    
+    /* Centra el texto del footer en móvil */
+    footer p {
+        text-align: center;
+    }
+}
